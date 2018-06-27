@@ -17,5 +17,5 @@ Please think about edgecases 🙈 💩
 
 -------------------
 
-After you finish this task, please open a pull request in this application. 
+After you finish this task, please open a pull request in this repo. 
 Thank you and good luck! ❤️🖖
