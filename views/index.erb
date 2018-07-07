@@ -1,11 +1,27 @@
-<div>
-  <h1> ATM </h1>
-</div>
-<div>
-  <form accept-charset="UTF-8" action="/" method="post">
-    <label for="amount">Amount of money</label>
-    <input id="amount" name="amount" type="text" />
-    <input name="commit" type="submit" value="Witdraw" />
-  </form>
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ATM</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div>
+      <h1> ATM </h1>
+    </div>
+    <div>
+      <form accept-charset="UTF-8" action="/" method="post">
+        <div class="form-group">
+          <label for="amount">Amount of money</label>
+	  <input id="amount" name="amount" type="number" placeholder="Enter Amount">
+	</div>
+	<button type="submit" class="btn btn-primary">Witdraw</button>
+      </form>
+    </div>
+  </body>
+</html>
 
