@@ -1,11 +1,24 @@
 require 'sinatra'
+require 'sinatra/contrib'
+require 'sinatra/reloader' if development?
 
 get '/' do
   erb :index
 end
 
 post '/' do
-  json witdraw(params[:amount].to_i)
+  amount = params[:amount].to_i
+  if amount <= 0 || amount % 5 > 0
+    json({
+      status: 400,
+      error: 'Invalid amount'
+    })
+  else
+    json({
+      status: 200,
+      result: witdraw(amount)
+    })
+  end
 end
 
 def witdraw(amount)
