@@ -1,5 +1,7 @@
 # Code Challenge
 
+## Description
+
 Hi there! 🎉
 
 In this challenge we need to build a simple Sinatra app with basic HTML form, this form send POST request to server with amount of money people want to withdraw and in the answer we need to return an array with actual banknotes. The bigger the note, the better 💸💸💸
@@ -19,3 +21,12 @@ Please think about edgecases 🙈 💩
 
 After you finish this task, please open a pull request in this repo. 
 Thank you and good luck! ❤️🖖
+
+## Starting app
+Ruby version: 2.4.1
+
+```
+bundle install
+ruby app.rb
+```
+Welcome to `localhost:4567` :)
