@@ -22,18 +22,12 @@ post '/' do
 end
 
 def witdraw(amount)
-  result = []
-  while amount / 50 > 0
-    result << 50
-    amount -= 50
-  end
-  while amount / 20 > 0
-    result << 20
-    amount -= 20
-  end
-  while amount / 5 > 0
-    result << 5
-    amount -= 5
-  end
+  result = Array.new(amount / 50, 50)
+  amount = amount % 50
+
+  result += Array.new(amount / 20, 20)
+  amount = amount % 20
+
+  result += Array.new(amount / 5, 5)
   result
 end
